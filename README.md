@@ -2,6 +2,15 @@
 
 API de vocabulário em inglês desenvolvida para o trabalho de **Front-end Engineering — FIAP**. Expõe cinco palavras com explicação em português e exemplo em inglês, mantendo o contrato do BFF apresentado em aula.
 
+
+## Links do projeto
+
+- [Site](https://wordbyword-fiap-victor-marjorie.pink-peach-7262.chatgpt.site)
+- [Frontend no GitHub](https://github.com/victornunes-eng/wordbyword-frontend)
+- [API no GitHub](https://github.com/victornunes-eng/wordbyword-api)
+- [Endpoint público de palavras](https://wordbyword-api.vercel.app/ask)
+- [Saúde da API](https://wordbyword-api.vercel.app/health)
+
 ## Integrantes
 
 | Integrante | RM |

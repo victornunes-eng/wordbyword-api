@@ -22,12 +22,12 @@ export async function generateWords({ apiKey, model = 'gpt-4o-mini', fetchImpl =
       store: false,
       max_output_tokens: 1800,
       instructions: 'Você é professor de inglês para brasileiros. Selecione cinco palavras distintas e úteis de nível A2 a B2. Explique cada significado em português e escreva uma frase natural de exemplo em inglês. Varie os temas e as palavras a cada consulta.',
-      input: 'Prepare cinco palavras para uma nova sessão de estudo.',
+      input: 'Prepare cinco palavras para uma nova sessão de estudo. IMPORTANTE: description é a explicação em português. useCase NÃO é uma descrição de quando usar a palavra: é uma frase de exemplo COMPLETA em INGLÊS contendo a palavra. Exemplo: word=curious, description=Curioso; interessado em aprender., useCase=She is curious about other cultures.',
       text: { format: { type: 'json_schema', name: 'vocabulary', strict: true, schema: {
         type: 'object', additionalProperties: false,
         properties: { words: { type: 'array', minItems: 5, maxItems: 5, items: {
           type: 'object', additionalProperties: false,
-          properties: { word: { type: 'string' }, description: { type: 'string' }, useCase: { type: 'string' } },
+          properties: { word: { type: 'string', description: 'One English vocabulary word.' }, description: { type: 'string', description: 'Meaning of the English word explained in Brazilian Portuguese.' }, useCase: { type: 'string', description: 'A complete natural example sentence written ONLY in English, containing the word. Example: She is curious about other cultures. Never write Portuguese in this field.' } },
           required: ['word', 'description', 'useCase'],
         } } }, required: ['words'],
       } } },
