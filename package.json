@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "engines": { "node": ">=22.13.0" },
-  "scripts": { "start": "node --env-file-if-exists=.env src/server.js", "dev": "node --watch --env-file-if-exists=.env src/server.js", "test": "node --test" }
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env src/local.js",
+    "dev": "node --watch --env-file-if-exists=.env src/local.js",
+    "test": "node --test"
+  }
 }

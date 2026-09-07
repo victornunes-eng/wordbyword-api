@@ -74,7 +74,7 @@ Retorna o estado do processo, o modo do provedor e se a chave foi configurada, *
 
 ## Publicar na Vercel
 
-1. Importe este repositório como projeto na Vercel. O ponto de entrada é `src/server.js`.
+1. Importe este repositório como projeto na Vercel. As funções estão em `api/ask.js` e `api/health.js`; `vercel.json` mapeia as rotas públicas.
 2. Configure Node.js 22.x e as variáveis `OPENAI_API_KEY`, `WORD_PROVIDER=openai`, `OPENAI_MODEL=gpt-4o-mini`, `ALLOWED_ORIGINS` com a URL pública do frontend e `TRUST_PROXY=1`.
 3. Publique em produção e confira `/health` e `/ask` sem estar autenticado na Vercel.
 4. No frontend, configure `NEXT_PUBLIC_API_URL` com a URL completa terminada em `/ask` e refaça sua compilação/publicação.
