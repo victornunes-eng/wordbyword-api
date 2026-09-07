@@ -5,7 +5,7 @@ API de vocabulário em inglês desenvolvida para o trabalho de **Front-end Engin
 
 ## Links do projeto
 
-- [Site](https://wordbyword-fiap-victor-marjorie.pink-peach-7262.chatgpt.site)
+- [Site](https://wordbyword-fiap-victor-marjorie.victornunesdev.chatgpt.site)
 - [Frontend no GitHub](https://github.com/victornunes-eng/wordbyword-frontend)
 - [API no GitHub](https://github.com/victornunes-eng/wordbyword-api)
 - [Endpoint público de palavras](https://wordbyword-api.vercel.app/ask)
